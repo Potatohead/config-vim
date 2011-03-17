@@ -1,0 +1,21 @@
+§
+§ =============================================================
+§ ========== USER MACROS ======================================
+§ =============================================================
+§
+|AUTHOR|    = Christopher Mckay 
+|AUTHORREF| = cmckay
+|EMAIL|     = cmckay@iseek.com.au
+|COMPANY|   = iseek Communications
+|COPYRIGHT| = Copyright (c) |YEAR|, |AUTHOR|
+§
+§ =============================================================
+§ ========== FILE INCLUDES ====================================
+§ =============================================================
+§
+|includefile| = comments.template
+|includefile| = statements.template
+|includefile| = idioms.template
+|includefile| = pod.template
+§
+§%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

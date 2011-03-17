@@ -1,0 +1,3 @@
+This is my vim config repo. Check it out and link it up to .vim and link
+~/.vim/vimrc to ~/.vimrc and you're good to go. Chances are this might not work
+on your system.
