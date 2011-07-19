@@ -101,10 +101,18 @@ snippet slurp
 	{ local $/ = undef; local *FILE; open FILE, "<${2:file}"; $$1 = <FILE>; close FILE }${3}
 # Moose Declaration
 snippet has
-	has '${1:name}' => (
-	    is => '${2:readability}',
-	    isa => '${3:type}',
-	    required => '${4:required}',
+	has ${1:name} => (
+	  is => '${2:readability}',
+	  isa => '${3:type}',
+	  required => ${4:required},
 	);
 snippet mkimmu
 	__PACKAGE__->meta->make_immutable;
+snippet mxd
+	use MooseX::Declare;
+
+	class ${1:name} {
+		
+	}
+	
+	__END__
