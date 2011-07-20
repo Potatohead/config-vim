@@ -114,5 +114,9 @@ snippet mxd
 	class ${1:name} {
 		
 	}
-	
+
 	__END__
+snippet log
+	my $log = Log::Log4perl->get_logger;
+snippet errdie
+	$log->error_die(${1:error});
