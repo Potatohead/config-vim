@@ -22,10 +22,20 @@ map \n :tabnext<cr>
 map \p :tabprevious<cr>
 map \c :tabclose<cr>
 
+set t_Co=256
+
+" This is for colour scheme
+" colorscheme desert256
+" colorscheme zenburn
+colorscheme wombat256
+
 "If using g/vim 7.3 turn on the color column
-if exists('+colorcolumn') 
-    set cc=+1
-endif
+" if exists('+colorcolumn') 
+"    set cc=+1
+"    hi ColorColumn ctermbg=lightmagenta
+" endif
+
+match ErrorMsg '\%>80v.\+'
 
 filetype plugin on
 filetype indent on
@@ -96,7 +106,3 @@ augroup END
 
 autocmd BufNewFile,BufRead *.epl,*.phtml colorscheme embperl_yellow
 
-set t_Co=256
-
-" This is for colour scheme
-colorscheme desert256
