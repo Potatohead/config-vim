@@ -35,7 +35,7 @@ colorscheme wombat256
 "    hi ColorColumn ctermbg=lightmagenta
 " endif
 
-match ErrorMsg '\%>80v.\+'
+match ErrorMsg '\%80v.\{0,3}'
 
 filetype plugin on
 filetype indent on
@@ -49,7 +49,7 @@ set laststatus=2
 " full path, modified [+], readonly [RO], help buffer [help], preview flag
 " [Preview], file format, what filetype vim detected, position in chars,
 " position as %, length in lines
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [LEN=%L] 
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [LEN=%L]
 
 " Edit and uncommet the next line if you want non-default marker
 " set foldmarker="{{{,}}}"
