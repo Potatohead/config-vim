@@ -1,4 +1,4 @@
-call pathogen#runtime_append_all_bundles() 
+call pathogen#infect() 
 
 :syntax enable
 set tabstop=2
@@ -35,7 +35,6 @@ colorscheme wombat256
 "    hi ColorColumn ctermbg=lightmagenta
 " endif
 
-match ErrorMsg '\%80v.\{0,3}'
 
 filetype plugin on
 filetype indent on
@@ -106,3 +105,4 @@ augroup END
 
 autocmd BufNewFile,BufRead *.epl,*.phtml colorscheme embperl_yellow
 
+match ErrorMsg '\%80v.\{0,3}'

@@ -89,12 +89,53 @@ snippet xfore
 snippet cl
 	package ${1:ClassName};
 
-	use Moose;
-	use namespace::autoclean;
+	use MooseX::Declare;
+	use Method::Signatures::Modifiers
 
-	${2:# body...}
+	class $1 { 
+		our $VERSION = '0.01';
 	
-	1; # End of $1
+		${4:body...}
+
+	}
+
+	__END__
+
+	=head1 NAME
+
+	$1 - ${2:Cathphrase}.
+
+	=head1 VERSION
+
+	Version 0.01
+
+	=head1 SYNOPSIS
+
+	Quick summary of what the module does.
+
+	Perhaps a little code snippet.
+
+			use iseek::VISP;
+
+			my $foo = iseek::VISP->new();
+			...
+
+	=head1 DESCRIPTION
+
+	${3:Description}
+
+	=head1 METHODS
+
+	=head1 AUTHOR
+
+	Christopher Mckay, C<< <cmckay at iseek.com.au> >>
+
+	=head1 LICENSE AND COPYRIGHT
+
+	Copyright 2011 iseek Communications.
+
+	This program is released under the following license: restrictive
+	
 # Read File
 snippet slurp
 	my $${1:var};
@@ -102,11 +143,11 @@ snippet slurp
 # Moose Declaration
 snippet has
 	has ${1:name} => (
-	  is => '${2:readability}',
-	  isa => '${3:type}',
+	  is => '${2:ro}',
+	  isa => '${3:Type}',
 	  required => ${4:required},
 	);
-snippet mkimmu
+snippet pmmi
 	__PACKAGE__->meta->make_immutable;
 snippet mxd
 	use MooseX::Declare;
@@ -116,7 +157,28 @@ snippet mxd
 	}
 
 	__END__
+snippet meth
+	method ${1:name} (${2:Signature}) {
+
+	}
 snippet log
 	my $log = Log::Log4perl->get_logger;
 snippet errdie
 	$log->error_die(${1:error});
+snippet pod
+	
+	=head1 NAME
+
+	${1:name} - ${2:description}
+
+	=head1 VERSION
+
+	Version ${3:version}
+
+	=head1 SYNOPSIS
+
+	=head1 METHODS
+
+	=head1 AUTHOR
+
+	Christopher Mckay, C<< <cmckay at iseek.com.au> >>
