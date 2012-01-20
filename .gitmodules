@@ -22,3 +22,6 @@
 [submodule "bundle/perl-support"]
 	path = bundle/perl-support
 	url = https://github.com/vim-scripts/perl-support.vim.git
+[submodule "bundle/perl-mxd-syntax"]
+	path = bundle/perl-mxd-syntax
+	url = https://github.com/rkitover/perl-vim-mxd.git
