@@ -25,3 +25,6 @@
 [submodule "bundle/perl-mxd-syntax"]
 	path = bundle/perl-mxd-syntax
 	url = https://github.com/rkitover/perl-vim-mxd.git
+[submodule "bundle/puppet-syntax-vim"]
+	path = bundle/puppet-syntax-vim
+	url = https://github.com/puppetlabs/puppet-syntax-vim.git
