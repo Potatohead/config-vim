@@ -21,6 +21,7 @@ map \t :tabnew<cr>
 map \n :tabnext<cr>
 map \p :tabprevious<cr>
 map \c :tabclose<cr>
+set wildmode=list:longest,list:full
 
 set t_Co=256
 
