@@ -19,9 +19,9 @@
 [submodule "bundle/puppet-syntax"]
 	path = bundle/puppet-syntax
 	url = https://github.com/puppetlabs/puppet-syntax-vim.git
-[submodule "bundle/perl-support"]
-	path = bundle/perl-support
-	url = https://github.com/vim-scripts/perl-support.vim.git
 [submodule "bundle/perl-mxd-syntax"]
 	path = bundle/perl-mxd-syntax
 	url = https://github.com/rkitover/perl-vim-mxd.git
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux.git
