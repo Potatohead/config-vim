@@ -64,7 +64,7 @@ imap <silent> <F2> <ESC>:NERDTreeToggle<CR>
 map <F3> :Tlist<CR>
 
 " opens a buffer switcher in this window
-map <F4> :MiniBufExplorer<CR>
+" map <F4> :MiniBufExplorer<CR>
 
 " enable and disable numbering
 map <F5> :set nu!<Bar>set nu?<CR>
